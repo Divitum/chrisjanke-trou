@@ -22,8 +22,24 @@
         }
 
         @media (max-width: 768px) {
+            html {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                overflow: hidden;
+                background-image: url('./assets/savethedate.png');
+                background-size: contain;         /* Change to contain to ensure the full image is shown */
+                background-repeat: no-repeat;     /* Prevent tiling */
+                background-position: center;
+            }
+
             .response-div {
-                height: 4000px;
+                height: 1000px
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
             }
         }
     </style>
