@@ -7,19 +7,31 @@
     <style>
         /* Make the entire page use 100% width and height */
         html, body {
-            height: 100%;
+            min-height: 100%;
             margin: 0;
         }
         /* Style for full-page background image */
         body {
             background-image: url('./assets/savethedate.png');
-            background-size: cover;         /* Ensure the image covers the entire page */
-            background-repeat: no-repeat;   /* Prevent tiling */
+            background-size: cover;         /* Change to contain to ensure the full image is shown */
+            background-repeat: no-repeat;     /* Prevent tiling */
+            background-position: center;      /* Center the image */
+            min-height: 100%;
+        }
+
+        .response-div {
+            height: 2275px;
+        }
+
+        @media (max-width: 768px) {
+            .response-div {
+                height: 4000px;
+            }
         }
     </style>
 </head>
 <body>
     <!-- Optional: You can add overlay content like text, if needed -->
-    <div style="height: 2275px;"></div> <!-- Placeholder for scrolling effect -->
+    <div class="response-div"></div> <!-- Placeholder for scrolling effect -->
 </body>
 </html>
