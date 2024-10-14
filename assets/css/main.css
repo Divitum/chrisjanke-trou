@@ -5441,7 +5441,7 @@ input, select, textarea {
 			}
 
 				.spotlight.style3 .content {
-					width: 34rem;
+					width: 35rem;
 					max-width: 100%;
 				}
 
@@ -6414,7 +6414,7 @@ input, select, textarea {
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
@@ -6533,16 +6533,22 @@ input, select, textarea {
 		}
 
 		.gallery.style1 article {
-			overflow: hidden;
+			-moz-flex-grow: 0;
+			-webkit-flex-grow: 0;
+			-ms-flex-grow: 0;
+			flex-grow: 0;
+			-moz-flex-shrink: 0;
+			-webkit-flex-shrink: 0;
+			-ms-flex-shrink: 0;
+			flex-shrink: 0;
+			display: block;
 			position: relative;
-			width: 25%;
+			overflow: hidden;
+			width: 8vw;
+			max-width: 8vw;
 		}
 
 			.gallery.style1 article .image {
-				-moz-transition: opacity 0.2s ease-in-out;
-				-webkit-transition: opacity 0.2s ease-in-out;
-				-ms-transition: opacity 0.2s ease-in-out;
-				transition: opacity 0.2s ease-in-out;
 				display: block;
 				width: 100%;
 				border-radius: 0;
@@ -7275,7 +7281,7 @@ input, select, textarea {
 		width: 64rem;
 	}
 
-		.wrapper.style1 h1 {
+		.wrapper.style1 h2 {
 			color: #000000;
 		}
 
